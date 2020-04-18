@@ -15,12 +15,21 @@ class App extends Component {
     };
   }
 
+  getGitHubApiUrl(username, type) {
+    const internalUser = username ? `/${username}` : ''
+    const internalType = type ? `/${type}` : ''
+    return `https://api.github.com/users${internalUser}${internalType}`
+  }
+
   handleSearch(e) {
     const value = e.target.value
     const KeyCode = e.which || e.KeyCode
     const ENTER = 13
+    const target = e.target
+
     if (KeyCode === ENTER) {
-      ajax().get("https://api.github.com/users/" + value)
+      target.disabled = true
+      ajax().get(this.getGitHubApiUrl(value))
         .then((result) => {
           this.setState({
             userInfo: {
@@ -30,18 +39,24 @@ class App extends Component {
               repos: result.public_repos,
               followers: result.followers,
               following: result.following,
-            }
+            },
+            repos: [],
+            starred: []
           })
+        })
+        .always(() => {
+          target.disabled = false
         })
     }
   }
 
   getRepos(type) {
     return (e) => {
-      ajax().get("https://api.github.com/users/rafaelmoura29/" + type)
+      const username = this.state.userInfo.login
+      ajax().get(this.getGitHubApiUrl(username, type))
         .then((result) => {
           this.setState({
-            [type]: result.map((repo) => ({ name: repo.name, link: repo.html_url})) 
+            [type]: result.map((repo) => ({ name: repo.name, link: repo.html_url }))
           })
         })
     }
