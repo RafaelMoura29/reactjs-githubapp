@@ -5,17 +5,18 @@ import React from 'react'
 import Repos from './index'
 
 storiesOf('Repos', module)
-  .add('With title prop', () => (
-    <Repos
-      title={"Favoritos"}
-    />
+  .add('with title prop', () => (
+    <Repos title='Favoritos' />
   ))
+
   .add('with repos', () => (
-    <Repos
-      title={"Favoritos"}
-      repos={[{
-        link: '#',
-        name: "Repositorio favorito"
-      }]}
-    />
+    <div style={{ padding: '50px' }}>
+      <Repos
+        title='Favoritos'
+        repos={[{
+          link: 'http://blog.da2k.com.br',
+          name: 'Blog Da2k'
+        }]}
+      />
+    </div>
   ))

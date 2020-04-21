@@ -28,7 +28,7 @@ module.exports = validate({
     new DashboardPlugin(),
 
     new HtmlPlugin({
-      title: 'GitHub app',
+      title: 'My app',
       template: path.join(__dirname, 'src', 'html', 'template-dev.html')
     })
   ],
