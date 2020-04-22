@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587579838246" clover="3.2.0">
-  <project timestamp="1587579838246" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="4" coveredelements="4" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1">
+<coverage generated="1587582831432" clover="3.2.0">
+  <project timestamp="1587582831432" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5" elements="39" coveredelements="39" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1">
       <file name="index.js" path="/home/rafael/dev/reactjs-githubapp/webpack/src/utils/pagination/index.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <metrics statements="24" coveredstatements="24" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="23" count="20" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="59" count="4" type="stmt"/>
       </file>
     </metrics>
   </project>
