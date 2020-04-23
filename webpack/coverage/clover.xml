@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587584727736" clover="3.2.0">
-  <project timestamp="1587584727736" name="All files">
-    <metrics statements="34" coveredstatements="34" conditionals="21" coveredconditionals="21" methods="5" coveredmethods="5" elements="60" coveredelements="60" complexity="0" loc="34" ncloc="34" packages="1" files="1" classes="1">
+<coverage generated="1587585066737" clover="3.2.0">
+  <project timestamp="1587585066737" name="All files">
+    <metrics statements="31" coveredstatements="31" conditionals="21" coveredconditionals="21" methods="6" coveredmethods="6" elements="58" coveredelements="58" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1">
       <file name="index.js" path="/home/rafael/dev/reactjs-githubapp/webpack/src/utils/pagination/index.js">
-        <metrics statements="34" coveredstatements="34" conditionals="21" coveredconditionals="21" methods="5" coveredmethods="5"/>
+        <metrics statements="31" coveredstatements="31" conditionals="21" coveredconditionals="21" methods="6" coveredmethods="6"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="39" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="8" count="30" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="27" type="stmt"/>
+        <line num="10" count="39" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="20" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
-        <line num="15" count="20" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="19" count="19" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="23" count="18" type="stmt"/>
-        <line num="24" count="10" type="stmt"/>
+        <line num="17" count="19" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="18" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="25" count="13" type="stmt"/>
         <line num="27" count="13" type="stmt"/>
-        <line num="29" count="13" type="stmt"/>
-        <line num="31" count="39" type="stmt"/>
-        <line num="35" count="65" type="stmt"/>
-        <line num="37" count="13" type="stmt"/>
+        <line num="29" count="39" type="stmt"/>
+        <line num="33" count="65" type="stmt"/>
+        <line num="35" count="13" type="stmt"/>
+        <line num="36" count="13" type="stmt"/>
         <line num="38" count="13" type="stmt"/>
-        <line num="40" count="13" type="stmt"/>
-        <line num="41" count="2" type="stmt"/>
-        <line num="48" count="13" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="46" count="13" type="stmt"/>
+        <line num="47" count="13" type="stmt"/>
         <line num="49" count="13" type="stmt"/>
-        <line num="51" count="13" type="stmt"/>
-        <line num="52" count="5" type="stmt"/>
-        <line num="60" count="13" type="stmt"/>
+        <line num="50" count="5" type="stmt"/>
+        <line num="58" count="13" type="stmt"/>
+        <line num="59" count="13" type="stmt"/>
         <line num="61" count="13" type="stmt"/>
-        <line num="63" count="13" type="stmt"/>
-        <line num="64" count="2" type="stmt"/>
-        <line num="71" count="13" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="69" count="13" type="stmt"/>
+        <line num="70" count="13" type="stmt"/>
         <line num="72" count="13" type="stmt"/>
-        <line num="74" count="13" type="stmt"/>
-        <line num="75" count="6" type="stmt"/>
-        <line num="82" count="13" type="stmt"/>
+        <line num="73" count="6" type="stmt"/>
+        <line num="80" count="13" type="stmt"/>
       </file>
     </metrics>
   </project>
