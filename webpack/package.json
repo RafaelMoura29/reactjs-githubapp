@@ -1,12 +1,12 @@
 {
   "scripts": {
     "start": "webpack-dashboard -- node server.js",
-    "test": "jest --coverage",
+    "test": "jest --coverage --no-cache",
     "test:watch": "yarn test -- --watch",
     "lint": "standard --verbose | snazzy",
     "lint:watch": "gulp",
     "lint:fix": "standard --fix",
-    "build": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.config -p",
+    "build": "cross-env NODE_ENV=production webpack --progress --config webpack/prod.config -p",
     "storybook": "start-storybook -p 6006 -c storybook",
     "build-storybook": "build-storybook -c storybook"
   },
@@ -39,5 +39,8 @@
     "@fdaciuk/ajax": "^2.1.2",
     "react": "^15.4.0",
     "react-dom": "^15.4.0"
+  },
+  "standard": {
+    "globals": ["test", "it", "describe"]
   }
 }

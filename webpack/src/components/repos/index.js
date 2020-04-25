@@ -1,6 +1,7 @@
 'use strict'
 
 import React, { PropTypes } from 'react'
+import Pagination from '../pagination'
 import './repos.css'
 
 const Repos = ({ className, title, repos }) => (
@@ -13,6 +14,7 @@ const Repos = ({ className, title, repos }) => (
         </li>
       ))}
     </ul>
+    <Pagination/>
   </div>
 )
 
