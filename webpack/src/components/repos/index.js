@@ -14,19 +14,27 @@ const Repos = ({ className, title, repos, handlePagination }) => (
         </li>
       ))}
     </ul>
-    <Pagination total={10} activePage={3} onClick={handlePagination}/>
+    <Pagination total={10} activePage={3} onClick={handlePagination} />
   </div>
 )
 
 Repos.defaultProps = {
   className: '',
-  repos: {}
 }
 
 Repos.propTypes = {
   className: PropTypes.string,
   title: PropTypes.string.isRequired,
-  repos: PropTypes.object,
+  repos: PropTypes.shape({
+    repos: PropTypes.arrayOf(PropTypes.shape({
+      link: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })).isRequired,
+    Pagination: PropTypes.shape({
+      total: PropTypes.number,
+      activePage: PropTypes.number
+    }).isRequired
+  }),
   handlePagination: PropTypes.func.isRequired
 }
 
